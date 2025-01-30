@@ -2,9 +2,11 @@ a{text-decoration: none;}
 
 a:hover{background-color: crimson;
 color:white;}
+
 body{
     background-color: antiquewhite;
  text-align: center;
 }
 
-h1{color:blue}
+h1{color:blue;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
