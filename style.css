@@ -10,3 +10,16 @@ body{
 
 h1{color:blue;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+  background-color: teal;
+  }
+
+  @media (max-width: 768px) {
+    body {
+        background-color: aqua;
+    }
+
+}
