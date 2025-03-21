@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Thanks</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+   body{text-align: center;}
+</style>
+</head>
+
+<body>
+<h1>Thanks for submitting the form</h1>
+<h2 id="info"></h2>
+<button type="button" id="clear" onclick="clearData()">Clear my data</button>
+<script>
+   //save and use URL info
+const urlParams = new URLSearchParams(window.location.search);
+const name = urlParams.get('fname');
+const email = urlParams.get('email');
+
+//look at URL in this page.....passed password!
+
+document.getElementById("info").innerHTML =name + "<br>"
+   + " Email: " + email + " <br> Phone: " + phone; 
+//set session
+   sessionStorage.setItem("name", fname);
+ 
+//set local
+   localStorage.setItem("name", fname);
+   localStorage.setItem("email", email);
+   localStorage.setItem("phone", phone);
+//clear local
+   function clearData(){
+      localStorage.clear();
+      sessionStorage.clear(); // Clear session storage if desired
+      document.getElementById("info").innerHTML = "Data cleared.";
+   }
+</script>
+
+</footer>
+</body>
+</html>
