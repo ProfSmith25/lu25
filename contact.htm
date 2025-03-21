@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Prof Smiths</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--embedded CSS style below-->
+    <style>
+        h1{text-align: center;}
+    </style>
+</head>
+<body>
+    <nav class="w3-bar w3-black w3-mobile w3-center" style="width:100%">
+        <a href="index.htm" class="w3-button w3-mobile">Home</a>
+        <a href="about.htm" class="w3-button w3-mobile">About</a>
+        <a href="contact.htm" class="w3-button w3-mobile">Contact</a>  
+    </nav>
+    <h1>Contact Me:</h1>
+    <form action="thanks.htm" method="get">
+    <table class="w3-content">
+    <tr>
+        <td><label for="fname">Firstname</label></td>
+        <td><input type="text" id="fname" name="fname" required></td>
+        </tr>
+
+        <td><label for="lname">Lastname</label></td>
+        <td><input type="text" id="lname" name="lname" required></td>
+        </tr>
+
+         <tr>  
+        <td><label for="email">Email</label></td>
+        <td><input type="email" id="email" name="email" required></td>
+        </tr> 
+   
+        <tr>
+        <td><label for="tel">Telephone</label></td>
+        <td><input type="tel" id="tel"
+          placeholder="format xxx-xxx-xxxx" name="phone"required></td>
+        </tr>
+  
+        <tr>
+        <td><label for="url">Website URL</label></td>
+        <td><input type="url" id="url"></td>
+    </tr>
+    <tr> <tr></tr>
+ 
+    <td><label for="text1"></label></td>
+        <td>  <textarea id="text1" name="text1" rows="4" cols="30">Send me a message! 
+            </textarea></td>
+        </tr> 
+     <tr>
+      <td></td>
+    <td><input type="submit" value="Submit">
+      <input type="reset" value="reset"></td>
+      </td>
+      </form>
+    
+</body>
+</html>

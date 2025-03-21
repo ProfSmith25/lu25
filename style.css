@@ -1,25 +1,111 @@
-a{text-decoration: none;}
+/*html selectors*/
+body {background-color:gray;
+  font-family: Arial;
+  text-align: center;
+}
+nav{font-size: 18px;
+    font-weight: bold;
 
-a:hover{background-color: crimson;
-color:white;}
-
-body{
-    background-color: antiquewhite;
- text-align: center;
+}
+  a{
+    text-decoration: none;
+    color:teal;
+}
+button {
+  background-color:blue;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
-h1{color:blue;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
-
-input[type=text] {
+.button1 {border-radius: 50%;}
+footer{
+    position:fixed;
     width: 100%;
-    padding: 12px 20px;
-  background-color: teal;
-  }
-
-  @media (max-width: 768px) {
-    body {
-        background-color: aqua;
-    }
-
+    bottom: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 40px;
 }
+
+
+table{margin:auto;
+   width: 400px; } 
+   th{text-align: left;}
+   table, td, th { border: 1px solid black; }
+    th, td { padding: 10px; } 
+/*id*/
+#topregion{margin:auto};
+
+/*classes*/
+.center{text-align: center;}
+.red{color:red}
+
+.centerbox{
+    margin:auto;
+    background-color: rgb(77, 77, 75);
+    color:white;
+    width: 75%;
+  height: auto;
+}
+.centerbox2{
+  margin-right: 30%;
+  margin-left: 30%;
+  background-color:  white;
+height: auto;
+text-align: center;
+}
+.column {
+    float: left;
+  }
+  
+  /* Left and right column */
+  .column.side {
+    padding-top: 15px;
+    width: 30%;
+    font-size: 18px;
+  margin-left: 20%;
+  }
+  
+  /* Middle column */
+  .column.middle {
+    width: 40%;
+    margin: 15px;
+    padding: 30px;
+    font-size: 20px;
+    border-style: groove;
+    background-color:mistyrose;
+  }
+  
+  /*only keyword used for older browsers*/
+
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) { 
+  body{background-color: gray;}
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body{background-color:azure;}
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body{background-color: lightslategray;}
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body{background-color:lightgray;}
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  body{background-color: whitesmoke;}
+}
+
+/*ids*/
+#smalltext{font-size: 16px;}
